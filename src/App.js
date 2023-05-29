@@ -39,9 +39,7 @@ const App = () => {
         </div>
         <div className="theme-toggle">
           <h2>Light Theme</h2>
-          <i onClick={switchTheme} className="fas fa-toggle-on">
-            {" "}
-          </i>
+          <i onClick={switchTheme} className="fas fa-toggle-on"></i>
         </div>
       </div>
     </div>
