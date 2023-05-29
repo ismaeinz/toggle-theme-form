@@ -10,7 +10,9 @@ const App = () => {
   return (
     <div className="app" data-theme={theme}>
       <div className="login">
-        <h1>login</h1>
+        <h1>
+          <i onClick={switchTheme} className="fas fa-toggle-on"></i>
+        </h1>
         <div className="container">
           <div className="top">
             <i className="fab fa-google"></i>
@@ -20,7 +22,7 @@ const App = () => {
             <i className="fab fa-apple"></i>
           </div>
 
-          <p className="divider">{/* <span>Or</span> */}</p>
+          <p className="divider"></p>
 
           <form>
             <input type="email" placeholder="please inter your mail " />
@@ -37,10 +39,7 @@ const App = () => {
           </div>
           <p className="create">Create Account</p>
         </div>
-        <div className="theme-toggle">
-          <h2>Light Theme</h2>
-          <i onClick={switchTheme} className="fas fa-toggle-on"></i>
-        </div>
+        <div className="theme-toggle"></div>
       </div>
     </div>
   );
